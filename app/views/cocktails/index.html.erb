@@ -1,0 +1,10 @@
+<div class="p-0 mt-3 ml-0">
+<h1>Our cocktails</h1>
+<% @cocktails.each do |cocktail| %>
+<div class="border-bottom">
+<h2><%= link_to cocktail.name, cocktail_path(cocktail) , :class =>'nav-link'%></h2>
+
+</div>
+<% end %>
+<%= link_to 'add a new cocktail', new_cocktail_path %>
+</div>
