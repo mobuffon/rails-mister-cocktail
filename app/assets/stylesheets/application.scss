@@ -12,3 +12,29 @@
 @import "components/index";
 @import "pages/index";
 @import "cocktails";
+.hans {
+  margin-top: 200px;
+  margin-bottom: 200px;
+  width: 40vw;
+  background-color: white;
+  padding: 20px;
+}
+.cardee :first-child {
+ margin-top: 100px;
+}
+
+body {
+ background-image: asset-url("bar-edit.jpg");
+ background-color: white;
+ background-size: auto 100vh;
+ background-repeat: no-repeat;
+ background-attachment: fixed;
+ color:white;
+
+   h1 {
+    margin-top: 80px;
+   color: white;
+   font-size: 50px;}
+h3 { color: white;}
+}
+
