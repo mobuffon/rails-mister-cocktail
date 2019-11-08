@@ -20,8 +20,8 @@ class DosesController < ApplicationController
 
   def destroy
     @cocktail = Cocktail.find(params[:cocktail_id])
-    dose = Dose.where(id: params[:id])
-    dose.delete_all
+    dose = Dose.find(params[:id])
+    dose.destroy
     redirect_to cocktail_path(@cocktail)
   end
 
