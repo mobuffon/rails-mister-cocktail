@@ -4,9 +4,13 @@
 # Examples:
 #
 #   movies = Movie.create([{ name: 'Star Wars'
-Ingredient.delete_all
-#   Character.create(name: 'Luke', movie: movies.first)
+puts "Destroying old ingredients, doses, and cocktails"
+Dose.destroy_all
+Ingredient.destroy_all
+Cocktail.destroy_all
+puts "Creating new ingredients"
 Ingredient.create(name: "Light rum")
+Ingredient.create(name: "Ice")
 Ingredient.create(name: "Applejack")
 Ingredient.create(name: "Gin")
 Ingredient.create(name: "Dark rum")
@@ -106,3 +110,36 @@ Ingredient.create(name: "Blackberry brandy")
 Ingredient.create(name: "Peppermint schnapps")
 Ingredient.create(name: "Creme de Cassis")
 Ingredient.create(name: "Jack Daniels")
+puts "Creating new cocktails"
+Cocktail.create!(name: "Rusty Nail", photo: open("https://res.cloudinary.com/kenrick/image/upload/v1573305106/Mister%20Cocktail/photo-1482349212652-744925892164_u3hsct.jpg"))
+Cocktail.create!(name: "Citrus Distillery", photo: open("https://res.cloudinary.com/kenrick/image/upload/v1573304892/Mister%20Cocktail/photo-1453825012366-3738046cb6c7_hvhmbn.jpg"))
+Cocktail.create!(name: "Bloody Barry", photo: open("https://res.cloudinary.com/kenrick/image/upload/v1573305020/Mister%20Cocktail/photo-1568100119359-dd8eec0b1ca3_ylqhza.jpg"))
+Cocktail.create!(name: "Breaking Bad", photo: open("https://res.cloudinary.com/kenrick/image/upload/v1573305177/Mister%20Cocktail/photo-1461823385004-d7660947a7c0_sd96xt.jpg"))
+Cocktail.create!(name: "Whiskey Whiskers", photo: open("https://res.cloudinary.com/kenrick/image/upload/v1573305158/Mister%20Cocktail/photo-1470337458703-46ad1756a187_hhckfn.jpg"))
+Cocktail.create!(name: "Clouded Judgement", photo: open("https://res.cloudinary.com/kenrick/image/upload/v1573305011/Mister%20Cocktail/photo-1558950334-8d04704332f8_q37x01.jpg"))
+Cocktail.create!(name: "Antidote", photo: open("https://res.cloudinary.com/kenrick/image/upload/v1573305119/Mister%20Cocktail/photo-1570629557357-45c6767e0140_azank2.jpg"))
+Cocktail.create!(name: "Invisibile", photo: open("https://res.cloudinary.com/kenrick/image/upload/v1573305040/Mister%20Cocktail/photo-1571291731905-9fd9805bc584_ylwcqs.jpg"))
+Cocktail.create!(name: "Bloody Cola", photo: open("https://res.cloudinary.com/kenrick/image/upload/v1573304976/Mister%20Cocktail/photo-1551751299-1b51cab2694c_mo5aig.jpg"))
+Cocktail.create!(name: "Lean Green", photo: open("https://res.cloudinary.com/kenrick/image/upload/v1573305029/Mister%20Cocktail/photo-1455621481073-d5bc1c40e3cb_h1h9q2.jpg"))
+Cocktail.create!(name: "High Tea", photo: open("https://res.cloudinary.com/kenrick/image/upload/v1573305141/Mister%20Cocktail/photo-1560461698-f3c2a1b15364_fbuvpn.jpg"))
+Cocktail.create!(name: "Passion", photo: open("https://res.cloudinary.com/kenrick/image/upload/v1573304900/Mister%20Cocktail/photo-1542600176-9d2c4bb4bc1a_t4qv3n.jpg"))
+Cocktail.create!(name: "Papa Smurf", photo: open("https://res.cloudinary.com/kenrick/image/upload/v1573305197/Mister%20Cocktail/photo-1550555179-309357935820_ctihjs.jpg"))
+Cocktail.create!(name: "Olive Garden", photo: open("https://res.cloudinary.com/kenrick/image/upload/v1573305054/Mister%20Cocktail/photo-1571577556441-cd4af9c209f3_cvbsdf.jpg"))
+Cocktail.create!(name: "Rocky Mountain", photo: open("https://res.cloudinary.com/kenrick/image/upload/v1573304882/Mister%20Cocktail/photo-1514361892635-6b07e31e75f9_axfmew.jpg"))
+puts "Creating new doses"
+Dose.create!(description: "10mL", cocktail_id: 1, ingredient_id: 1)
+Dose.create!(description: "10mL", cocktail_id: 2, ingredient_id: 1)
+Dose.create!(description: "10mL", cocktail_id: 3, ingredient_id: 1)
+Dose.create!(description: "10mL", cocktail_id: 4, ingredient_id: 1)
+Dose.create!(description: "10mL", cocktail_id: 5, ingredient_id: 1)
+Dose.create!(description: "10mL", cocktail_id: 6, ingredient_id: 1)
+Dose.create!(description: "10mL", cocktail_id: 7, ingredient_id: 1)
+Dose.create!(description: "10mL", cocktail_id: 8, ingredient_id: 1)
+Dose.create!(description: "10mL", cocktail_id: 9, ingredient_id: 1)
+Dose.create!(description: "10mL", cocktail_id: 10, ingredient_id: 1)
+Dose.create!(description: "10mL", cocktail_id: 11, ingredient_id: 1)
+Dose.create!(description: "10mL", cocktail_id: 12, ingredient_id: 1)
+Dose.create!(description: "10mL", cocktail_id: 13, ingredient_id: 1)
+Dose.create!(description: "10mL", cocktail_id: 14, ingredient_id: 1)
+Dose.create!(description: "10mL", cocktail_id: 15, ingredient_id: 1)
+puts "done!"

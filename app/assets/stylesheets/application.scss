@@ -18,23 +18,42 @@
   width: 40vw;
   background-color: white;
   padding: 20px;
+
 }
+.cards {
+margin-left: 30em ;
+}
+.carde { margin: 70px 0;
+         vertical-align: center;}
 .cardee :first-child {
- margin-top: 100px;
 }
 
 body {
- background-image: asset-url("bar-edit.jpg");
- background-color: white;
- background-size: auto;
- background-repeat: no-repeat;
- background-attachment: fixed;
- color:white;
-
+  background-color: transparent;
    h1 {
-    margin-top: 80px;
+   margin-top: 80px;
    color: white;
    font-size: 50px;}
 h3 { color: white;}
+label {color: white;}
 }
+html {
+  background: url(bar-edit.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.bg {
+  background-color: black;
+}
+
+@media(max-width: 768px) {
+  .cards {
+    margin: 0 auto;
+  }
+  .carde { margin: 70px auto;
+         vertical-align: center;}
+}
+
 

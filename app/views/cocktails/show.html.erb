@@ -1,12 +1,12 @@
-<div class="">
-  <h1><%= @cocktail.name %></h1>
-</div>
 
+<div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= cl_image_path @cocktail.photo,crop: :scale, class: '' %>)">
+  <%=  @cocktail.name %>
+</div>
 <% if  @doses.count == 0   %>
 
 <div class="d-none white">
   <% end %>
-  <h3 >Ingredients</h3>
+  <h3 style=" padding: 20px;">Ingredients</h3>
   <br>
   <table class="table table-striped bg-light rounded" >
     <thead>
