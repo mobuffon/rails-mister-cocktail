@@ -24,7 +24,7 @@ gem 'coffee-rails', '~> 4.2'
 gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.5'
-# Use Redis adapter to run Action Cable in production
+# Use Redis adapter to run Action Cable hein production
 # gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
@@ -43,6 +43,8 @@ gem 'bootsnap', '>= 1.1.0', require: false
 
   gem 'cloudinary', '~> 1.9.1'
 group :development, :test do
+  gem 'cloudinary', '~> 1.9.1'
+
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'dotenv-rails', groups: [:development, :test]
