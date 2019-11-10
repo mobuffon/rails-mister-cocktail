@@ -20,8 +20,9 @@
   padding: 20px;
 
 }
-.cards {
-margin-left: 100% ;
+.cards-right {
+display:flex;
+justify-content: flex-end;
 }
 .carde { margin: 70px 0;
          vertical-align: center;}
@@ -49,10 +50,17 @@ html {
 }
 
 @media(max-width: 768px) {
-  .cards {
-    margin: 0 auto;
+  .cards-right {
+    display:flex;
+    justify-content: center;
   }
-  .carde { margin: 70px auto;}
+  .cards-left {
+    display: flex;
+    justify-content: center;}
 }
 
 
+
+  nav {
+    width:100%;
+  }
